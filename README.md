@@ -14,20 +14,24 @@ A straightforward CRUD (Create, Read, Update, Delete) application to manage a li
 ## Installation & Setup: to run it locally
 
 1. Clone the repository:
-   git clone <repo-url>
-   cd to folder path
+
+   > git clone <repo-url>
+   > cd to folder path
 
 2. Install dependencies:
-   run
-   npm install
+
+   > run
+   > npm install
 
 3. Connect backend with local server - in api/employeeDataAPI.js
-   server runs at 8000
-   add it as BASEURL=http://localhost:8000/api/employee in .env
-   use Employee Data Employeement API
+
+   > server runs at 8000
+   > add it as BASEURL=http://localhost:8000/api/employee in .env
+   > use Employee Data Employeement API
 
 4. Start the react:
-   npm run dev
+
+   > npm run dev
 
 5. Vite react runs at http://localhost:5173
 
