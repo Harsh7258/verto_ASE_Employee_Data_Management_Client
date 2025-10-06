@@ -2,7 +2,9 @@
 
 ## Project Goal
 
-A straightforward CRUD (Create, Read, Update, Delete) application to manage a list of employees.
+A straightforward CRUD (Create, Read, Update, Delete) application to manage a list of employees. Project frontend connected with Employee Data Management API.
+
+- **Brainstrom Frontend Flow:**: [FLow Link](https://app.eraser.io/workspace/IhhmCnFSzFOsrn4loXrn?origin=share)
 
 ## Core Features
 
