@@ -4,9 +4,34 @@
 
 A straightforward CRUD (Create, Read, Update, Delete) application to manage a list of employees. Project frontend connected with Employee Data Management API.
 
+- **Employee Data Management API repo:**: [API Repo](https://github.com/Harsh7258/verto_ASE_Employee_Data_Management_API)
+- Mainly focused in building in RESTf API for Employee Data Managemnet
+
 - **Brainstrom Frontend Flow:**: [FLow Link](https://app.eraser.io/workspace/IhhmCnFSzFOsrn4loXrn?origin=share)
 
 ## Core Features
+
+## Installation & Setup: to run it locally
+
+1. Clone the repository:
+   git clone <repo-url>
+   cd to folder path
+
+2. Install dependencies:
+   run
+   npm install
+
+3. Connect backend with local server - in api/employeeDataAPI.js
+   server runs at 8000
+   add it as BASEURL=http://localhost:8000/api/employee in .env
+   use Employee Data Employeement API
+
+4. Start the react:
+   npm run dev
+
+5. Vite react runs at http://localhost:5173
+
+6. Good to go!!
 
 ### Technologies Used
 
