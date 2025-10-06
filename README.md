@@ -1,16 +1,48 @@
-# React + Vite
+# Employee Data Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Goal
 
-Currently, two official plugins are available:
+A straightforward CRUD (Create, Read, Update, Delete) application to manage a list of employees.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Core Features
 
-## React Compiler
+### Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Backend: Node.js, Express.js, SQLite, express-async-handler, cors, express-rate-limit, Postman
+- Frontend: React, Vite, Tailwind CSS, Zustand, React Toastify, Axios
 
-## Expanding the ESLint configuration
+### Backend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Full set of CRUD API endpoints for employees (`/api/employee`):
+  - **Create**: Add a new employee.
+  - **Read**: Get all employees or a single employee by ID.
+  - **Update**: Edit employee details.
+  - **Delete**: Remove an employee from the database.
+- Employee fields: `name`, `email`, and `position`.
+- **Postman** used for API endpoint testing and API documentation
+- Uses **SQLite** for data persistence.
+- Clean RESTful API structure using **Express.js**.
+- Error handling and response status codes implemented.
+- Rate limiting applied to prevent abuse.
+- **Documentation**: [API Docs](https://documenter.getpostman.com/view/31106866/2sB3QJMpxQ)
+- **Deployed API**: [Live API](verto-ase-employee-data-management-api-production.up.railway.app)
+
+### Frontend
+
+- Display all employees in a **table** with columns: Name, Email, Position, and Actions.
+- Actions include **Edit** and **Delete** buttons for each employee.
+- Add new employee via a **modal form**.
+- Edit employee details in the same modal, prefilled with existing data.
+- Search bar to find employees by name, email, or position.
+- Dropdown filter to sort employees (latest, oldest, or all).
+- Pagination to display a fixed number of employees per page (default 10).
+- State management using **Zustand**.
+- Toast notifications using **React Toastify** for success and error messages.
+- Clean UI using **Tailwind CSS**.
+
+## Evaluation Criteria
+
+- **Bonus Features**:
+  - Search/filter employees on the frontend.
+  - Frontend form validation.
+  - Optional backend tests for each CRUD endpoint.
