@@ -15,23 +15,31 @@ A straightforward CRUD (Create, Read, Update, Delete) application to manage a li
 
 1. Clone the repository:
 
-   > git clone <repo-url>
-   > cd to folder path
+```
+   git clone <verto-ase-management-client-repo-url>
+   cd to folder path
+```
 
-2. Install dependencies:
+2. Install dependencies: install all packages used - vite, react, tailwaind, axios, zustand
 
-   > run
-   > npm install
+```
+   run
+   npm install
+```
 
 3. Connect backend with local server - in api/employeeDataAPI.js
+   - create .env file - use BASE_URL=http://localhost:8000/api/employee
 
-   > server runs at 8000
-   > add it as BASEURL=http://localhost:8000/api/employee in .env
-   > use Employee Data Employeement API
+```
+   server runs at 8000 - use Employee Data Employeement API
+   First start server - `http://localhost:8000` locally
+```
 
 4. Start the react:
 
-   > npm run dev
+```
+   npm run dev
+```
 
 5. Vite react runs at http://localhost:5173
 
